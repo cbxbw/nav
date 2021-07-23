@@ -176,12 +176,13 @@ export function randomBgImg() {
   el.id = 'random-light-bg'
   el.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;z-index:-3;transition: 1s linear;'
   el.style.backgroundImage =
-    `linear-gradient(${deg}deg, ${randomColor()} 0%, ${randomColor()} 100%)`
+    `linear-gradient(black, #9198e5)`
   document.body.appendChild(el)
 
   function setBg() {
     const randomBg =
-    `linear-gradient(${deg}deg, ${randomColor()} 0%, ${randomColor()} 100%)`
+   /* `linear-gradient(${deg}deg, ${randomColor()} 0%, ${randomColor()} 100%)`*/
+    `linear-gradient(black, #9198e5)`
     el.style.opacity = '.3'
     setTimeout(() => {
       el.style.backgroundImage = randomBg
@@ -189,7 +190,7 @@ export function randomBgImg() {
     }, 1000)
   }
 
-  randomTimer = setInterval(setBg, 10000)
+  /*randomTimer = setInterval(setBg, 10000)*/
 }
 
 export function queryString(): {

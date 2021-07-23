@@ -6,17 +6,18 @@
       selector=".main"
     >
     </app-fixbar>
-
+   
     <nav class="top-nav user-select-none dark-border-color dark-bg">
       <a 
         *ngFor="let item of websiteList; index as i;" 
         (click)="handleCilckTopNav(i)" 
         [class.active]="page === i" 
         [class.dark-text-active]="page === i" 
-        [class.remove]="!isLogin && item.ownVisible"
+        [class.remove]="item.ownVisible"
         class="ripple-btn dark-text"
       >
-        {{ item.title }}
+      <!-- [class.remove]="!isLogin && item.ownVisible" -->
+       <span>  {{ item.title }} </span>
       </a>
     </nav>
 
