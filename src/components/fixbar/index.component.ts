@@ -40,10 +40,10 @@ export class FixbarComponent {
       name: '切换到 Sim',
       url: '/sim'
     },
-    // {
-    //   name: '切换到 Side',
-    //   url: '/side'
-    // },
+    {
+      name: '切换到 ALL',
+      url: '/side'
+    },
     // {
     //   name: '切换到 Shortcut',
     //   url: '/shortcut'
